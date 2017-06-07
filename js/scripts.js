@@ -1,8 +1,5 @@
 var leapYear = function(input) {
-  if (input % 100 === 0) {
-    return false;
-  }
-  else if (input % 4 === 0) {
+  if ((input % 4 === 0) && (input % 100 !== 0)) {
     return true;
   }
   else {
@@ -18,6 +15,6 @@ $(document).ready(function() {
     var input = $("#leapyear").val();
     var result = leapYear(input);
 
-    $(".results").text(result);
+    alert(result);
   });
 });
