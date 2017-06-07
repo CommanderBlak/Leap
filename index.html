@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Leap Year</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="container text-justify">
@@ -13,11 +14,11 @@
     <h1>Leap Year Detector</h1>
     <p><strong>Enter a year and find out if it's a leap year:</strong></p>
     <form class="form-leap" action="index.html" method="post">
-      <input type="number" name="" placeholder="Year" id="leapyear">
+      <input type="text" name="" placeholder="Year" id="leapyear">
       <button type="submit" name="button">Find out!</button>
     </form>
-    <div class="results">
-      
+    <div class="container" id="results">
+      <p id="p-result"><span class="year"></span> is <span class="not"></span> a leap year.</p>
     </div>
   </div>
 
