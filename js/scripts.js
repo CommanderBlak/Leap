@@ -1,5 +1,8 @@
 var leapYear = function(input) {
-  if (input % 4 === 0) && (100 !== 0){
+  if (input % 100 === 0) {
+    return false;
+  }
+  else if (input % 4 === 0) {
     return true;
   }
   else {
